@@ -23,13 +23,29 @@
 }
 
 :root {
-  --text-color-primary: #262624; /* #717b90; */
+  --text-color-primary: #262624;
   --text-color-light: #5e626b;
-  --link-color-primary: #262624; /* #b4bac4; */
+  --link-color-primary: #262624;
+  --link-color-light: #81817b;
   --link-color-primary-hover: #7b7b73;
   --border-color-primary: #1a1f29;
   --border-color-light: #cccccc;
   --brand-blue: #171c8f;
+  --background-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color-primary: #fff;
+    --text-color-light: #9196a3;
+    --link-color-light: #999;
+    --link-color-primary: #d8d8d8;
+    --link-color-primary-hover: #7b7b73;
+    --border-color-primary: #1a1f29;
+    --border-color-light: #cccccc;
+    --brand-blue: #5258d5;
+    --background-color: #262624;
+  }
 }
 
 * {
@@ -62,7 +78,7 @@ body {
   margin: 0;
   font-family: "Avenir Next Rounded Std", sans-serif;
   color: var(--text-color-primary);
-  background-color: #fff;
+  background-color: var(--background-color);
 }
 
 h1,
@@ -85,6 +101,11 @@ button {
   background: none;
   padding: 0;
   margin: 0;
+  color: inherit;
+}
+
+select {
+  color: inherit;
 }
 
 button {
@@ -348,7 +369,7 @@ fieldset legend {
 .breadcrumbs__current {
   display: inline-block;
   font-size: 12px;
-  color: #74767b;
+  color: var(--link-color-light);
 }
 
 .footer {
@@ -729,6 +750,7 @@ fieldset legend {
   width: 100%;
   max-width: 300px;
   height: 50px;
+  background: transparent;
 }
 
 .size-guide-link {
@@ -736,7 +758,7 @@ fieldset legend {
   margin-top: 10px;
   padding: 10px 0;
   text-decoration: underline;
-  color: -webkit-link;
+  color: var(--brand-blue);
 }
 
 .modal {
