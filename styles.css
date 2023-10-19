@@ -23,9 +23,10 @@
 }
 
 :root {
-  --text-color-primary: #717b90;
+  --text-color-primary: #262624; /* #717b90; */
   --text-color-light: #5e626b;
-  --link-color-primary: #b4bac4;
+  --link-color-primary: #262624; /* #b4bac4; */
+  --link-color-primary-hover: #7b7b73;
   --border-color-primary: #1a1f29;
   --border-color-light: #cccccc;
   --brand-blue: #171c8f;
@@ -37,7 +38,6 @@
 
 a {
   text-decoration: none;
-  outline: none;
 }
 
 p {
@@ -79,12 +79,12 @@ h6 {
 input,
 textarea,
 button {
-  font-family: "Avenir Next Rounded Std", sans-serif;
+  font-family: inherit;
+  font-size: inherit;
   border: none;
   background: none;
   padding: 0;
   margin: 0;
-  outline: none;
 }
 
 button {
@@ -324,7 +324,7 @@ fieldset legend {
 .breadcrumbs__current {
   display: inline-block;
   font-size: 12px;
-  color: #74767B;
+  color: #74767b;
 }
 
 .footer {
@@ -365,7 +365,7 @@ fieldset legend {
   .footer__columns {
     flex-wrap: wrap;
     margin-bottom: 0;
-  }  
+  }
   .footer__col:nth-child(1) {
     order: 3;
     width: 100%;
@@ -378,31 +378,31 @@ fieldset legend {
     width: 50%;
     max-width: 50%;
     padding-right: 20px;
-  }  
+  }
   .footer__col:last-child {
     order: 2;
     width: 50%;
     max-width: 50%;
     padding-left: 20px;
-  }    
+  }
 }
 
 @media (max-width: 460px) {
   .footer {
     padding-top: 40px;
-  }  
+  }
   .footer__col:nth-child(2) {
     width: 100%;
     max-width: 100%;
     padding-right: 0;
     text-align: center;
-  }  
+  }
   .footer__col:last-child {
     width: 100%;
     max-width: 100%;
     padding-left: 0;
     text-align: center;
-  }    
+  }
 }
 
 .footer__copyright {
@@ -460,7 +460,7 @@ fieldset legend {
 @media (max-width: 768px) {
   .footer__address .social {
     justify-content: center;
-  }  
+  }
 }
 
 .social {
@@ -567,7 +567,7 @@ fieldset legend {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  outline: none;
+  /* outline: none; */
 }
 
 .product-card__left {
@@ -712,6 +712,7 @@ fieldset legend {
   margin-top: 10px;
   padding: 10px 0;
   text-decoration: underline;
+  color: -webkit-link;
 }
 
 .modal {
@@ -727,7 +728,7 @@ fieldset legend {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -737,28 +738,42 @@ fieldset legend {
   position: absolute;
   box-sizing: border-box;
   background-color: #fff;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  padding: 50px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 24px 50px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 2px;
 }
 
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-close {
+  padding: 8px;
+  display: flex;
+  color: var(--link-color-primary);
+}
+
+.modal-close:hover {
+  color: var(--link-color-primary-hover);
+}
+
 .show-modal {
   display: block;
 }
 
-.size-guide__table tr:first-child td {
+.size-guide__table th {
   font-weight: bold;
 }
 
-.size-guide__table td {
+.size-guide__table :is(th, td) {
   border: 1px solid;
   padding: 10px;
 }
-
-
 
 .product-card__infolabel {
   font-size: 16px;
@@ -801,7 +816,7 @@ fieldset legend {
 }
 
 .input-quantity__btn:hover {
-  outline: 1px var(--border-color-primary) solid;
+  /* outline: 1px var(--border-color-primary) solid; */
   z-index: 1;
   color: var(--text-color-primary);
 }
