@@ -39,32 +39,4 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  const showModal = (modalWindow) => {
-    modalWindow.classList.add("show-modal");
-  };
-
-  const closeModal = (e) => {
-    const mw = e.target.closest(".modal");
-    mw.classList.remove("show-modal");
-  };
-
-  const modalTarget = document.querySelectorAll(".modal-target");
-  modalTarget.forEach((modalTarget) => {
-    modalTarget.addEventListener("click", () => {
-      const modalWindow = document.querySelector(".modal");
-      showModal(modalWindow);
-    });
-  });
-  const modalBackdrop = document.querySelectorAll(".modal-backdrop");
-  modalBackdrop.forEach((modalBackdrop) => {
-    modalBackdrop.addEventListener("click", (e) => {
-      closeModal(e);
-    });
-  });
-
-  const modalCloseButton = document.getElementById("modal-close-button");
-  modalCloseButton.addEventListener("click", (e) => {
-    closeModal(e);
-  });
 });
