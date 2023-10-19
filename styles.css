@@ -116,6 +116,30 @@ fieldset legend {
   overflow: hidden;
 }
 
+.skip-link {
+  position: absolute !important;
+  background-color: var(--brand-blue);
+  color: #fff;
+  padding: 16px;
+}
+
+.skip-link:hover {
+  text-decoration: underline;
+}
+
+.skip-link:not(:focus) {
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+}
+
+.skip-link:focus {
+  z-index: 999;
+}
+
 .container {
   width: 100%;
   max-width: 1340px;
