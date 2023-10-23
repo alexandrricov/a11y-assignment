@@ -382,7 +382,12 @@ fieldset legend {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 0;
   margin-bottom: 47px;
+}
+
+.footer__columns dd {
+  margin: 0;
 }
 
 .footer__col {

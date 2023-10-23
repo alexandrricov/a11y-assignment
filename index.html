@@ -27,16 +27,14 @@
                 <a class="menu__link" href="#">Company</a>
               </li>
               <li class="menu__item">
-                <h1>
-                  <a class="header__logo" href="/">
-                    <img
-                      class="header__logo-picture"
-                      src="images/logo.svg"
-                      alt="Susparsa logo"
-                    />
-                    <span class="v-h">Susparsa</span>
-                  </a>
-                </h1>
+                <a class="header__logo" href="/">
+                  <img
+                    class="header__logo-picture"
+                    src="images/logo.svg"
+                    alt="Susparsa logo"
+                  />
+                  <span class="v-h">Susparsa</span>
+                </a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Account</a>
@@ -70,9 +68,9 @@
 
           <div class="product-card" id="skipLinkTarget">
             <div class="product-card__right">
-              <h2 class="product-card__title" id="productName">
+              <h1 class="product-card__title" id="productName">
                 White unisex t-shirt
-              </h2>
+              </h1>
               <p class="product-card__price">EUR 40</p>
               <p class="product-card__infolabel">Tax included</p>
               <form
@@ -278,7 +276,7 @@
                 />
               </a>
               <section>
-                <h3 class="v-h">Product info</h3>
+                <h2 class="v-h">Product info</h2>
                 <div class="accordion">
                   <details class="accordion__item">
                     <summary class="accordion__item-title">
@@ -316,12 +314,12 @@
           </div>
 
           <section class="section" aria-labelledby="labelProductsSimiilar">
-            <h3
+            <h2
               class="heading-2 products-similar__heading-2"
               id="labelProductsSimiilar"
             >
               Video about the product
-            </h3>
+            </h2>
             <div class="product-video_container">
               <iframe
                 width="100%"
@@ -336,9 +334,9 @@
           </section>
 
           <section class="section products-similar">
-            <h3 class="heading-2 products-similar__heading-2">
+            <h2 class="heading-2 products-similar__heading-2">
               You may also like
-            </h3>
+            </h2>
             <div class="products-grid">
               <article class="products-grid__item">
                 <a href="#" class="products-grid__item-photo">
@@ -349,9 +347,9 @@
                     alt='A girl in a purple hoodie with the inscription "Just smile"'
                   />
                 </a>
-                <h4 class="products-grid__item-name">
+                <h3 class="products-grid__item-name">
                   <a href="#">Product name</a>
-                </h4>
+                </h3>
                 <ul class="colors-palette products-grid__item-colors-palette">
                   <li class="colors-palette__item">
                     <span
@@ -395,9 +393,9 @@
                     alt='A guy in a blue T-shirt with the inscription "Follow Your dreams"'
                   />
                 </a>
-                <h4 class="products-grid__item-name">
+                <h3 class="products-grid__item-name">
                   <a href="#">Very long product name for testing purposes</a>
-                </h4>
+                </h3>
                 <ul class="colors-palette products-grid__item-colors-palette">
                   <li class="colors-palette__item">
                     <span
@@ -436,9 +434,9 @@
                     alt='Girl in a green T-shirt with the inscription "Stay positive"'
                   />
                 </a>
-                <h4 class="products-grid__item-name">
+                <h3 class="products-grid__item-name">
                   <a href="#">Product name</a>
-                </h4>
+                </h3>
                 <ul class="colors-palette products-grid__item-colors-palette">
                   <li class="colors-palette__item">
                     <span
@@ -478,10 +476,10 @@
 
       <footer class="footer">
         <div class="container footer__container">
-          <div class="footer__columns">
-            <section class="footer__col">
-              <h2 class="footer__heading">About</h2>
-              <div class="footer__address">
+          <dl class="footer__columns">
+            <div class="footer__col">
+              <dt class="footer__heading">About</dt>
+              <dd class="footer__address">
                 <p>Susparsa Store</p>
                 <p>Geneva, Switzerland</p>
                 <ul class="social" aria-label="Our social accounts">
@@ -532,33 +530,35 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-            </section>
-            <section class="footer__col">
-              <h2 class="footer__heading">Company</h2>
-              <nav aria-label="Footer primary">
-                <ul class="footer__list">
-                  <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Woman</a>
-                  </li>
-                  <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Men</a>
-                  </li>
-                  <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Kids</a>
-                  </li>
-                  <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">About Us</a>
-                  </li>
-                  <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Our Materials</a>
-                  </li>
-                </ul>
-              </nav>
-            </section>
-            <section class="footer__col">
-              <h2 class="footer__heading">Useful links</h2>
-              <div>
+              </dd>
+            </div>
+            <div class="footer__col">
+              <dt class="footer__heading">Company</dt>
+              <dd>
+                <nav aria-label="Footer primary">
+                  <ul class="footer__list">
+                    <li class="footer__list-item">
+                      <a class="footer__list-link" href="#">Woman</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a class="footer__list-link" href="#">Men</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a class="footer__list-link" href="#">Kids</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a class="footer__list-link" href="#">About Us</a>
+                    </li>
+                    <li class="footer__list-item">
+                      <a class="footer__list-link" href="#">Our Materials</a>
+                    </li>
+                  </ul>
+                </nav>
+              </dd>
+            </div>
+            <div class="footer__col">
+              <dt class="footer__heading">Useful links</dt>
+              <dd>
                 <ul class="footer__list">
                   <li class="footer__list-item">
                     <a class="footer__list-link" href="#">Privacy Policy</a>
@@ -578,38 +578,44 @@
                     <a class="footer__list-link" href="#">Contact Us</a>
                   </li>
                 </ul>
-              </div>
-            </section>
-            <section class="footer__col">
-              <h2 class="footer__heading" id="subscribe-footer">Subscribe</h2>
-              <form class="form" action="#" aria-labelledby="subscribe-footer">
-                <div class="form__input-group">
-                  <label>
-                    <div class="v-h">Email</div>
+              </dd>
+            </div>
+            <div class="footer__col">
+              <dt class="footer__heading" id="subscribe-footer">Subscribe</dt>
+              <dd>
+                <form
+                  class="form"
+                  action="#"
+                  aria-labelledby="subscribe-footer"
+                >
+                  <div class="form__input-group">
+                    <label>
+                      <div class="v-h">Email</div>
+                      <input
+                        class="input"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                      />
+                    </label>
+                    <button type="submit" class="btn btn_primary">
+                      Subscribe
+                    </button>
+                  </div>
+                  <label class="form__input-group">
                     <input
-                      class="input"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
+                      class="checkbox"
+                      type="checkbox"
+                      name="agree"
+                      id="agree"
                     />
+                    I agree to give you all my data
                   </label>
-                  <button type="submit" class="btn btn_primary">
-                    Subscribe
-                  </button>
-                </div>
-                <label class="form__input-group">
-                  <input
-                    class="checkbox"
-                    type="checkbox"
-                    name="agree"
-                    id="agree"
-                  />
-                  I agree to give you all my data
-                </label>
-              </form>
-            </section>
-          </div>
+                </form>
+              </dd>
+            </div>
+          </dl>
           <small class="footer__copyright">© Susparsa 2021</small>
         </div>
       </footer>
@@ -617,13 +623,8 @@
     <dialog class="modal" id="dialog">
       <form class="modal-body size-guide" method="dialog">
         <div class="modal-header">
-          <h3 class="heading-2">Size guide</h3>
-          <button
-            type="submit"
-            id="modal-close-button"
-            class="modal-close"
-            autofocus
-          >
+          <h2 class="heading-2">Size guide</h2>
+          <button type="submit" class="modal-close" autofocus>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
