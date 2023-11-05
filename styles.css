@@ -31,8 +31,10 @@
   --border-color-primary: #1a1f29;
   --border-color-light: #cccccc;
   --brand-blue: #171c8f;
+  --brand-blue-hover: #292fad;
   --background-color: #fff;
   accent-color: var(--brand-blue);
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,10 +44,11 @@
     --link-color-light: #999;
     --link-color-primary: #d8d8d8;
     --link-color-primary-hover: #7b7b73;
-    --border-color-primary: #1a1f29;
+    --border-color-primary: #fff;
     --border-color-light: #cccccc;
     --brand-blue: #5258d5;
     --background-color: #262624;
+    color-scheme: dark;
   }
 }
 
@@ -198,7 +201,7 @@ fieldset legend {
 }
 
 .btn_primary:hover {
-  background-color: #292fad;
+  background-color: var(--brand-blue-hover);
 }
 
 .btn_secondary {
@@ -625,14 +628,12 @@ fieldset legend {
 .product-card__left {
   width: 60%;
   padding-right: 32px;
-  order: 1;
   margin-bottom: 50px;
 }
 
 .product-card__right {
   width: 40%;
   padding-left: 32px;
-  order: 2;
   margin-bottom: 50px;
 }
 
@@ -656,13 +657,11 @@ fieldset legend {
   .product-card__left {
     width: 100%;
     padding-right: 0;
-    order: 1;
   }
 
   .product-card__right {
     width: 100%;
     padding-left: 0;
-    order: 2;
   }
 }
 
