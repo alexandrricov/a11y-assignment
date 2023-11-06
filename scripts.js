@@ -39,4 +39,22 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const openDialogBtn = document.getElementById("openDialogBtn");
+  const dialog = document.getElementById("dialog");
+  const mainGrid = document.getElementById("main-grid");
+
+  openDialogBtn.addEventListener("click", () => {
+    dialog.showModal();
+
+    mainGrid.setAttribute("inert", "");
+    mainGrid.setAttribute("aria-hidden", "true");
+  });
+
+  dialog.addEventListener("close", () => {
+    mainGrid.removeAttribute("inert");
+    mainGrid.removeAttribute("aria-hidden");
+
+    openDialogBtn.focus();
+  });
 });

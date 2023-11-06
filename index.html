@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="main-grid">
+  <div class="main-grid" id="main-grid">
     <header class="header">
       <a href="#skipLinkTarget" class="skip-link">Skip to content</a>
       <div class="container header__container">
@@ -138,8 +138,7 @@
                   <option value="l">L</option>
                   <option value="xl">XL</option>
                 </select>
-                <button class="size-guide-link modal-target" type="button"
-                  onclick="dialog.open ? dialog.close() : dialog.showModal()">
+                <button class="size-guide-link modal-target" type="button" id="openDialogBtn">
                   Size Guide
                 </button>
               </div>
