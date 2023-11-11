@@ -69,6 +69,8 @@ a:hover {
 
 a[target="_blank"]::after {
   content: " ⧉";
+  font-size: x-small;
+  vertical-align: super;
 }
 
 p {
@@ -557,7 +559,22 @@ fieldset legend {
   align-items: center;
   width: 24px;
   height: 24px;
+  text-decoration: none !important;
+  color: var(--link-color-light);
   position: relative;
+}
+
+.social__link:hover {
+  color: var(--link-color-primary);
+}
+
+.social__link::after {
+  align-self: flex-start;
+  margin-inline-start: 4px;
+}
+
+.social__link svg {
+  flex-shrink: 0;
 }
 
 .social__link::after {
@@ -582,8 +599,7 @@ fieldset legend {
 }
 
 .social__logo {
-  display: block;
-  color: var(--link-color-light);
+  /* display: block; */
 }
 
 .social__logo:focus-visible,
