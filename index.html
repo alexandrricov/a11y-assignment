@@ -371,7 +371,7 @@
                 <p class="products-grid__item-price">EUR 40</p>
               </article>
             </li>
-            <li>
+            <!-- <li>
               <a href="#" class="products-grid__item"
                 aria-label="Test t-shirt wrapped in link; EUR 40; available colors: orange, pink, blue, green">
                 <div class="products-grid__item-photo">
@@ -403,7 +403,7 @@
                 </ul>
                 <p class="products-grid__item-price">EUR 40</p>
               </a>
-            </li>
+            </li> -->
           </ul>
         </section>
       </div>
@@ -474,16 +474,20 @@
             <nav aria-labelledby="useful-links-heading">
               <ul class="footer__list">
                 <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank">Privacy Policy</a>
+                  <a class="footer__list-link" href="https://google.com" target="_blank"
+                    aria-describedby="opens-in-new-window">Privacy Policy</a>
                 </li>
                 <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank">Shipping Policy</a>
+                  <a class="footer__list-link" href="https://google.com" target="_blank"
+                    aria-describedby="opens-in-new-window">Shipping Policy</a>
                 </li>
                 <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank">Return & Refund Policy</a>
+                  <a class="footer__list-link" href="https://google.com" target="_blank"
+                    aria-describedby="opens-in-new-window">Return & Refund Policy</a>
                 </li>
                 <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank">Terms of Service</a>
+                  <a class="footer__list-link" href="https://google.com" target="_blank"
+                    aria-describedby="opens-in-new-window">Terms of Service</a>
                 </li>
                 <li class="footer__list-item">
                   <a class="footer__list-link" href="https://google.com">Contact Us</a>
@@ -512,7 +516,7 @@
         </div>
         <small class="footer__copyright">© Susparsa 2021</small>
       </div>
-      <p hidden id="opens-in-new-window">opens in new window</p>
+      <p aria-hidden="true" id="opens-in-new-window">opens in new window</p>
     </footer>
   </div>
   <dialog class="modal" id="dialog">
