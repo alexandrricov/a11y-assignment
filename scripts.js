@@ -15,6 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const inputsQuantity = document.querySelectorAll(".input-quantity");
+  const quantityText = document.querySelector("#selected-quantity");
+  const quantityInput = document.querySelector(".input-quantity__field");
   inputsQuantity.forEach((input) => {
     const inputField = input.querySelector(".input-quantity__field");
     const inputBtnIncrease = input.querySelector(
@@ -27,26 +29,17 @@ window.addEventListener("DOMContentLoaded", () => {
     inputBtnIncrease.addEventListener("click", () => {
       const initialValue = inputField.value * 1;
       inputField.value = initialValue + 1;
+      quantityText.innerText = inputField.value;
     });
     inputBtnDecrease.addEventListener("click", () => {
       const initialValue = inputField.value * 1;
       if (initialValue > 1) {
         inputField.value = initialValue - 1;
+        quantityText.innerText = inputField.value;
       }
     });
-  });
-
-  const accordions = document.querySelectorAll(".accordion__item");
-  accordions.forEach((accordion) => {
-    const accordionTitle = accordion.querySelector(".accordion__item-title");
-    accordionTitle.addEventListener("click", () => {
-      accordion.classList.toggle("accordion__item_active");
-      const title = accordion.querySelector(".accordion__item-title");
-      if (accordion.classList.contains("accordion__item_active")) {
-        title.setAttribute("aria-expanded", "true");
-      } else {
-        title.setAttribute("aria-expanded", "false");
-      }
+    quantityInput.addEventListener("change", () => {
+      quantityText.innerText = "";
     });
   });
 

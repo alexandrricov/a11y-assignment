@@ -80,7 +80,7 @@
               <a class="breadcrumbs__link" href="#">Women</a>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item_active">
-              <span class="breadcrumbs__current">White unisex t-shirt</span>
+              <span class="breadcrumbs__current" aria-current="page">White unisex t-shirt</span>
             </li>
           </ol>
         </nav>
@@ -151,81 +151,43 @@
                   Color<span>
                     - <span id="productColorValue">White</span></span>
                 </legend>
-                <ul class="input-group">
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color" data-name-display="White"
-                        data-price-display="40" value="white" checked aria-label="White" />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="
-                              background-color: #ffffff;
-                              border: 1px #cccccc solid;
-                            ">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">White</span>
-                    </label>
-                  </li>
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color" data-name-display="Black"
-                        data-price-display="37" value="black" aria-label="Black" />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="
-                              background-color: #1a1f29;
-                              border: 1px #cccccc solid;
-                            ">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">Black</span>
-                    </label>
-                  </li>
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color" data-name-display="Gray"
-                        data-price-display="35" value="gray" aria-label="Gray" />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="background-color: #aeaeb0">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">Gray</span>
-                    </label>
-                  </li>
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color"
-                        data-name-display="Purple latte" value="purple" aria-label="Purple latte"
-                        data-price-display="50" />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="background-color: #ba9be5">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">Purple latte</span>
-                    </label>
-                  </li>
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color" data-name-display="Pink Rose"
-                        data-price-display="55" value="pink-rose" aria-label="Pink Rose" disabled />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="background-color: #e9a0a7">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">Pink Rose</span>
-                    </label>
-                  </li>
-                  <li class="input-group__item">
-                    <label class="input-radio">
-                      <input class="input-radio__input" type="radio" name="product_color" data-name-display="Deep Peach"
-                        data-price-display="100" value="deep-peach" aria-label="Deep Peach" disabled />
-                      <span class="input-radio__visual input-radio-color">
-                        <span class="input-radio-color__sample" style="background-color: #f8cab1">
-                        </span>
-                      </span>
-                      <span class="input-radio__tooltip">Deep Peach</span>
-                    </label>
-                  </li>
-                </ul>
+                <div class="input-group">
+
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="White"
+                      data-price-display="40" value="white" checked style="
+                        background-color: #ffffff;
+                      " />
+                    <span class="input-radio__tooltip">White</span>
+                  </label>
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="Black"
+                      data-price-display="37" value="black" style="
+                        background-color: #1a1f29;
+                      " />
+                    <span class="input-radio__tooltip">Black</span>
+                  </label>
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="Gray"
+                      data-price-display="35" value="gray" style="background-color: #aeaeb0" />
+                    <span class="input-radio__tooltip">Gray</span>
+                  </label>
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="Purple latte"
+                      value="purple" data-price-display="50" style="background-color: #ba9be5" />
+                    <span class="input-radio__tooltip">Purple latte</span>
+                  </label>
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="Pink Rose"
+                      data-price-display="55" value="pink-rose" disabled style="background-color: #e9a0a7" />
+                    <span class="input-radio__tooltip">Pink Rose</span>
+                  </label>
+                  <label class="input-radio">
+                    <input class="input-radio__input" type="radio" name="product_color" data-name-display="Deep Peach"
+                      data-price-display="100" value="deep-peach" disabled style="background-color: #f8cab1" />
+                    <span class="input-radio__tooltip">Deep Peach</span>
+                  </label>
+                </div>
               </fieldset>
               <fieldset class="product-card__parameter product-card__parameter_last">
                 <legend class="product-card__label">Quantity</legend>
@@ -240,7 +202,7 @@
                     aria-label="Increase quantity">
                     &plus;
                   </button>
-                  <!-- <div aria-live="polite" id="selected-quantity"></div> -->
+                  <div aria-live="polite" id="selected-quantity" class="v-h"></div>
                 </div>
               </fieldset>
               <button type="button" class="btn btn_secondary btn_hollow">
@@ -413,91 +375,87 @@
       <div class="container footer__container">
         <div class="footer__columns">
           <div class="footer__col">
-            <h2 class="footer__heading">About</h2>
+            <h2 class="footer__heading" id="footer-heading-about">About</h2>
             <div class="footer__address">
               <address>
                 <p>Susparsa Store</p>
                 <p>Geneva, Switzerland</p>
               </address>
-              <nav aria-label="Our social accounts">
-                <ul class="social">
-                  <li class="social__item">
-                    <a class="social__link" href="https://www.facebook.com" target="_blank" aria-label="Facebook"
-                      aria-describedby="opens-in-new-window">
-                      <svg class="social__logo" width="10" height="20" viewBox="0 0 10 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.02694 9.9817H6.42882V19.5H2.49245V9.9817H0.6203V6.63659H2.49245V4.47193C2.49245 2.92396 3.22776 0.5 6.46386 0.5L9.37967 0.512199V3.7592H7.26406C6.91704 3.7592 6.42908 3.93258 6.42908 4.671V6.63971H9.37084L9.02694 9.9817Z"
-                          fill="currentColor" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link" href="https://www.instagram.com" target="_blank" aria-label="Instagram"
-                      aria-describedby="opens-in-new-window">
-                      <svg class="social__logo" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path
-                          d="M14.7071 0.5C17.3502 0.5 19.5 2.65013 19.5 5.29293V14.7071C19.5 17.3502 17.3502 19.5 14.7071 19.5H5.29293C2.65013 19.5 0.5 17.3502 0.5 14.7071V5.29293C0.5 2.65013 2.65013 0.5 5.29293 0.5H14.7071ZM14.7071 2.56779H5.29293C3.7903 2.56779 2.56779 3.7903 2.56779 5.29293V14.7071C2.56779 16.2097 3.7903 17.4326 5.29293 17.4326H14.7071C16.2097 17.4326 17.4326 16.21 17.4326 14.7071V5.29293C17.4326 3.7903 16.21 2.56779 14.7071 2.56779ZM10 5.10678C12.6984 5.10678 14.8936 7.30195 14.8936 10C14.8936 12.698 12.698 14.8936 10 14.8936C7.30195 14.8936 5.10678 12.6984 5.10678 10C5.10678 7.30195 7.30195 5.10678 10 5.10678ZM10 7.17456C8.44247 7.17456 7.17421 8.44212 7.17421 9.99965C7.17421 11.5579 8.44247 12.8258 10 12.8258C11.5582 12.8258 12.8254 11.5579 12.8254 9.99965C12.8254 8.44247 11.5579 7.17456 10 7.17456ZM15.0509 3.80297C15.6892 3.80297 16.2086 4.32238 16.2086 4.96073C16.2086 5.59909 15.6892 6.1185 15.0509 6.1185C14.4122 6.1185 13.8928 5.59909 13.8928 4.96073C13.8928 4.32238 14.4122 3.80297 15.0509 3.80297Z"
-                          fill="currentColor" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+
+              <ul class="social" aria-label="Our social accounts">
+                <li class="social__item">
+                  <a class="social__link" href="https://www.facebook.com" target="_blank" aria-label="Facebook"
+                    aria-describedby="opens-in-new-window">
+                    <svg class="social__logo" width="10" height="20" viewBox="0 0 10 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.02694 9.9817H6.42882V19.5H2.49245V9.9817H0.6203V6.63659H2.49245V4.47193C2.49245 2.92396 3.22776 0.5 6.46386 0.5L9.37967 0.512199V3.7592H7.26406C6.91704 3.7592 6.42908 3.93258 6.42908 4.671V6.63971H9.37084L9.02694 9.9817Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="https://www.instagram.com" target="_blank" aria-label="Instagram"
+                    aria-describedby="opens-in-new-window">
+                    <svg class="social__logo" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path
+                        d="M14.7071 0.5C17.3502 0.5 19.5 2.65013 19.5 5.29293V14.7071C19.5 17.3502 17.3502 19.5 14.7071 19.5H5.29293C2.65013 19.5 0.5 17.3502 0.5 14.7071V5.29293C0.5 2.65013 2.65013 0.5 5.29293 0.5H14.7071ZM14.7071 2.56779H5.29293C3.7903 2.56779 2.56779 3.7903 2.56779 5.29293V14.7071C2.56779 16.2097 3.7903 17.4326 5.29293 17.4326H14.7071C16.2097 17.4326 17.4326 16.21 17.4326 14.7071V5.29293C17.4326 3.7903 16.21 2.56779 14.7071 2.56779ZM10 5.10678C12.6984 5.10678 14.8936 7.30195 14.8936 10C14.8936 12.698 12.698 14.8936 10 14.8936C7.30195 14.8936 5.10678 12.6984 5.10678 10C5.10678 7.30195 7.30195 5.10678 10 5.10678ZM10 7.17456C8.44247 7.17456 7.17421 8.44212 7.17421 9.99965C7.17421 11.5579 8.44247 12.8258 10 12.8258C11.5582 12.8258 12.8254 11.5579 12.8254 9.99965C12.8254 8.44247 11.5579 7.17456 10 7.17456ZM15.0509 3.80297C15.6892 3.80297 16.2086 4.32238 16.2086 4.96073C16.2086 5.59909 15.6892 6.1185 15.0509 6.1185C14.4122 6.1185 13.8928 5.59909 13.8928 4.96073C13.8928 4.32238 14.4122 3.80297 15.0509 3.80297Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="footer__col">
-            <h2 class="footer__heading">Company</h2>
-            <nav aria-label="Footer primary">
-              <ul class="footer__list">
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Woman</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Men</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Kids</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">About Us</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Our Materials</a>
-                </li>
-              </ul>
-            </nav>
+            <h2 class="footer__heading" id="footer-heading-company">Company</h2>
+            <ul class="footer__list" aria-labelledby="footer-heading-company">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Woman</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Men</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Kids</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">About Us</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Our Materials</a>
+              </li>
+            </ul>
           </div>
           <div class="footer__col">
-            <h2 class="footer__heading" id="useful-links-heading">Useful links</h2>
-            <nav aria-labelledby="useful-links-heading">
-              <ul class="footer__list">
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank"
-                    aria-describedby="opens-in-new-window">Privacy Policy</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank"
-                    aria-describedby="opens-in-new-window">Shipping Policy</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank"
-                    aria-describedby="opens-in-new-window">Return & Refund Policy</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com" target="_blank"
-                    aria-describedby="opens-in-new-window">Terms of Service</a>
-                </li>
-                <li class="footer__list-item">
-                  <a class="footer__list-link" href="https://google.com">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
+            <h2 class="footer__heading" id="footer-heading-useful-links">Useful links</h2>
+            <ul class="footer__list" aria-labelledby="footer-heading-useful-links">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://google.com" target="_blank"
+                  aria-describedby="opens-in-new-window">Privacy Policy</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://google.com" target="_blank"
+                  aria-describedby="opens-in-new-window">Shipping Policy</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://google.com" target="_blank"
+                  aria-describedby="opens-in-new-window">Return & Refund Policy</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://google.com" target="_blank"
+                  aria-describedby="opens-in-new-window">Terms of Service</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://google.com" aria-label="contact them"
+                  title="opens in blah-blah">Contact Us</a>
+              </li>
+            </ul>
           </div>
           <div class="footer__col">
-            <h2 class="footer__heading" id="subscribe-footer">Subscribe</h2>
-            <form class="form" action="#" aria-labelledby="subscribe-footer">
+            <h2 class="footer__heading" id="footer-heading-subscribe">Subscribe</h2>
+            <form class="form" action="#" aria-labelledby="footer-heading-subscribe">
               <div class="form__input-group">
                 <label style="display: flex; flex-grow: 1;">
                   <div class="v-h">Email</div>
